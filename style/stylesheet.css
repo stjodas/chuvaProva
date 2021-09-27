@@ -46,11 +46,14 @@
     max-width: 220px;
     height: 2508px;
     left: 0px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .side-bar {
-    display: flex;
-    flex-direction: column;
+    width: 220px;
+    height: 68px;
 }
 
 .menu-item{
