@@ -271,8 +271,8 @@ a.link::after {
 
     background-color: pink;
 
-    justify-content: ;
-    align-items: center;
+    justify-content: flex-start;
+    
 }
 
 .content-body h1 {
