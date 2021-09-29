@@ -1,13 +1,168 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.side-menu {
+body{
+    overflow-x: hidden;
+}
+
+/* Header*/
+
+.container{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    left: 150px;
+    padding-left: 136px;
+
+    background-color: #FDF1EB;
+}
+
+.header-content p {
+    margin-top: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #725C5C;
+}
+
+.header-content h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #725C5C;
+}
+
+.header-content h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+color: #725C5C;
+}
+
+.dropdown {
     position: relative;
+    width: 100px;
+    left: 550px;
+    top: -45px;
+
+    margin-left: 200px;
+}
+
+.user {
+    display: flex;
+    position: relative;
+
+    left: 750px;
+    top: -80px;
+    margin-left: 220px;
+
+
+}
+
+.user-photo{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: -13px;
+    top: -10px;
+}
+
+.user img, p {
+    display: inline-block;
+}
+
+.number, .dot{
+    right: 7px;
+    top: -4px;
+}
+
+.number{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 15px;
+
+    background-color: #F85959;
+}
+
+.click{ 
+    
+    background-color: transparent;
+    display: inline-block;
+}
+
+.click, .links {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    outline: none;
+    width: 97px;
+    height: 34px;
+
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    color: #333333;
+    transition: 0.3s;
+}
+
+.list {
+    position: absolute;
+    transform:  scaleY(0);
+    transform-origin: top;
+        transition: 0.3s;
+}
+
+.newlist {
+    transform: scaleY(1);
+}
+
+.links {
+    background-color:#ED7839;
+}
+
+.links:hover{
+    background-color: #FFB354;
+    transform: 1.1s;
+}
+
+/*Menu lateral */
+
+.side-menu {
+    position:relative;
     max-width: 220px;
     height: 2508px;
     left: 0px;
-    top: -150px;
 
     display: flex;
     flex-direction: column;
@@ -100,3 +255,20 @@ a.link::after {
     margin-left: 256px;
 }
 
+/* cinteudo body */
+
+.body-container {
+    display: block;
+    position: relative;
+
+    margin-left: 250px;
+    
+}
+
+/* Footer */
+
+.side-footer {
+    position: relative;
+    margin-left: 250px;
+    bottom: 130px;
+}
