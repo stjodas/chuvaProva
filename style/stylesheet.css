@@ -292,9 +292,25 @@ a.link::after {
     height: 54px;
 
     position: relative;
+}
 
+.layer {
+    margin-top: 19px;
+    width: 783px;
+    height: 439px;
+    background: rgba(141, 53, 6);
     
-    
+    border-radius: 3px;
+
+}
+
+.camada {
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.video-imagem {
+    margin-top: 19px;
 }
 
 /* Footer */
