@@ -57,48 +57,60 @@ body {
 
 .user {
   display: flex;
-  
+  margin-top: 19px;
+  flex-direction: column;
 }
 
 .user-photo {
   position: relative;
-  height: 50px;
-  width: 50px;
+  display: flex;
+  align-items: center;
+
+  margin-right: 30px;
+  margin-top: 10px;
+
+}
+
+.photo {
   border-radius: 50%;
-  right: -13px;
-  top: -10px;
+  width: 50px;
+  height: 50px;
 }
 
-.user img,
-p {
-  display: inline-block;
+.user {
+  display: flex;
 }
 
-.number,
-.dot {
-  right: 7px;
-  top: -4px;
-}
+.dot p{
+  position: absolute;
 
-.number {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 15px;
   line-height: 12px;
+ 
 
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
 
+
+  left: 4.7px;
+  top: 2px;
   color: #ffffff;
 
+}
+
+.dot {
+  
   position: relative;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  right: 15px;
 
+  right: 20px;
+  bottom: 20px;
   background-color: #f85959;
 }
 
