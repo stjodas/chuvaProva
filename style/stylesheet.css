@@ -273,10 +273,9 @@ a.link::after {
   height: 1392px;
   display: flex;
   flex-direction: column;
-  background-color: pink;
   justify-content: flex-start;
 
-  margin-left: 35px;
+  margin-left: 50px;
 }
 
 .content-body h1 {
@@ -307,9 +306,53 @@ a.link::after {
   display: flex;
   margin-bottom: 12px;
 }
+
 .titleWrapper {
   display: flex;
   flex-direction: column;
+}
+
+.titleWrapper button {
+  background-color: #ED7839;
+  border-radius: 4px;
+  margin-left: 10px;
+  border: 0px;
+}
+
+.title img {
+  max-width: 19px;
+  max-height: 19px;
+}
+
+.titleWrapper p {
+  color: rgba(237, 120, 57, 1);
+}
+
+.downloadButton {
+  width: 120px;
+  height: 31px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.starButton {
+  width: 43px;
+  height: 31px;
+}
+
+
+.doiButton {
+  width: 43px;
+  height: 31px;
 }
 
 .layer {
@@ -345,7 +388,7 @@ a.link::after {
 }
 
 .detalhesHeader {
-  background: #FDF1EB;
+  background-color: #FDF1EB;
   border: 1px solid #ECECEC;
   box-sizing: border-box;
   border-radius: 3px 3px 0px 0px;
@@ -414,21 +457,32 @@ a.link::after {
   display: flex;
 }
 
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #FDF1EB;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 96%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-}
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
+  margin-top: 20px;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #4E4E4E
 }
 
 .panel {
@@ -436,18 +490,27 @@ a.link::after {
   background-color: white;
   display: none;
   overflow: hidden;
+  width: 96%;
+  
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
 }
 
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+.panel p{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+
+  color: #5C5C5C;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
 
 .discussion-content {
