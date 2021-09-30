@@ -16,6 +16,8 @@ body {
   background-color: #fdf1eb;
   height: 68px;
   padding-left: 36px;
+
+  justify-content: space-between;
 }
 
 .header-content p {
@@ -27,6 +29,7 @@ body {
   line-height: 16px;
   display: flex;
   color: #725c5c;
+
 }
 
 .header-content h3 {
@@ -54,6 +57,7 @@ body {
 
 .user {
   display: flex;
+  
 }
 
 .user-photo {
@@ -254,19 +258,13 @@ a.link::after {
 /* conteudo body */
 
 .content-body {
-  width: 1059px;
   height: 1392px;
   display: flex;
   flex-direction: column;
-  position: relative;
-
-  top: 10px;
-  margin-left: 40px;
-
   background-color: pink;
-
   justify-content: flex-start;
-  
+
+  margin-left: 35px;
 }
 
 .content-body h1 {
@@ -278,7 +276,7 @@ a.link::after {
   justify-content: center;
 
   letter-spacing: 0.05em;
-  color: #ED7839;
+  color: #ed7839;
 }
 
 .title {
@@ -288,14 +286,26 @@ a.link::after {
   position: relative;
 }
 
-.layer {
+.heroContent {
+  display: flex;
   margin-top: 19px;
+}
+
+.buttonWrapper {
+  display: flex;
+  margin-bottom: 12px;
+}
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.layer {
   width: 783px;
   height: 439px;
   background: rgba(141, 53, 6);
-  
-  border-radius: 3px;
 
+  border-radius: 3px;
 }
 
 .camada {
@@ -307,7 +317,88 @@ a.link::after {
   margin-top: 19px;
 }
 
-.interesse-buttons {
+.mainContent {
+  width: 100%;
+}
+
+.interessedetails {
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+
+  margin-left: 40px;
+}
+
+.detalhesHeader {
+  background: #FDF1EB;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+
+  height: 45px;
+  display: flex;
+  width: 242px;
+
+  align-items: center;
+}
+
+.detalhesHeader h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.detalhesHeader {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+
+
+  letter-spacing: 0.02em;
+}
+
+.detalhesHeader > h2 {
+  margin-left: 15px;
+}
+
+.scrollbar{
+  overflow-y: scroll;
+}
+
+.autores {
+  margin-top: 30px;
+}
+
+
+.nomeUniversidades{
+  margin-top: 30px;
+
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+
+
+  letter-spacing: 0.02em;
+
+  color: #5C5C5C
+}
+
+.nomeAutores, 
+.nomeUniversidades{
+  list-style-type: none;
+}
+
+.contentTitleWrapper {
+  margin-top: 20px;
   display: flex;
 }
 
@@ -323,7 +414,8 @@ a.link::after {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
