@@ -592,7 +592,7 @@ a.link::after {
 color: #595959;
 }
 
-.discussion-content button {
+.plusButton button{
   width: 133px;
   height: 32px;
 
@@ -603,8 +603,7 @@ color: #595959;
   line-height: 16px;
   text-align: center;
   margin-top: 20px;
-
-  text-align: center;
+  margin-bottom: 30px;
 
   color: #FFFFFF;
 
@@ -615,5 +614,67 @@ color: #595959;
 
 }
 
+.showQuiz {
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
 
+.showQuiz h3{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ED7839;
+}
+
+.showQuiz h4{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #5C5C5C;
+}
+
+.showQuiz p{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #4D4D4D;
+}
+
+.moreOption {
+  display: flex;
+  flex-direction:row;
+  width: 220px;
+  height: 30px;
+  justify-content: space-around;
+  image-orientation: 40px;
+}
+
+.likeButton {
+  width: 27px;
+  height: 19px;
+  background: #ED7839;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  border: none;
+
+  display: flex;
+}
+
+.likeButton img {
+  position: relative;
+  left: 7px;
+  top: 3px;
+}
 /* Footer */
