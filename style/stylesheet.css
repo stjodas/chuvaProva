@@ -457,16 +457,11 @@ a.link::after {
   display: flex;
 }
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
 .accordion {
   background-color: #FDF1EB;
   cursor: pointer;
   padding: 18px;
-  width: 96%;
+  max-width: 96%;
   text-align: left;
   border: none;
   outline: none;
@@ -485,15 +480,20 @@ a.link::after {
   color: #4E4E4E
 }
 
+.resume {
+  background-color: #FDF1EB;
+}
+
 .panel {
   padding: 0 18px;
   background-color: white;
-  display: none;
   overflow: hidden;
-  width: 96%;
+  width: 100%;
   
   border: 1px solid #ECECEC;
   box-sizing: border-box;
+
+  display: block;
 }
 
 .panel p{
@@ -511,6 +511,8 @@ a.link::after {
   align-self: stretch;
   flex-grow: 0;
   margin: 0px 0px;
+
+ 
 }
 
 .discussion-content {
