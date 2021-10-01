@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Header*/
 
 .header-content {
@@ -226,10 +230,10 @@
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 19px;
   text-decoration: none;
-  left: 24px;
+  left: 20px;
 
   color: #725c5c;
 }
@@ -239,7 +243,7 @@ a.link::after {
   width: 220px;
   height: 2px;
   background: #e7e7e7;
-  display: block;
+  display: flex;
   position: relative;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -370,7 +374,7 @@ a.link::after {
   position: relative;
   align-self: center;
   top: 200px;
-  right: 30px;
+  right: 10px;
   
   font-family: Roboto;
   font-style: normal;
@@ -386,7 +390,6 @@ a.link::after {
 .textlayer h2{
   position: relative;
   align-self: center;
-  right: 20px;
   top: 250px;
 
   font-family: Roboto;
@@ -418,10 +421,14 @@ a.link::after {
 
 .textlayer img {
   position: relative;
-  width: 85px;
+  width: 95px;
   border-radius: 50%;
   top: 140px;
   left: 45px;
+  padding: 5px;
+
+  border: 1px solid #ED7839;
+  box-sizing: border-box;
 }
 
 .camada {
@@ -1051,4 +1058,145 @@ a.link::after {
 footer {
   margin-top: 65px;
   width: 100%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+.content-body {
+  width: 90px;
+}
+
+.headerText p{
+  margin-top: 7px;
+  font-size: 13px;;
+}
+
+.headerText h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.drop {
+  margin-left: 5px;
+}
+
+.dropdown button{
+  width: 60px;
+}
+
+.world{
+  display: none;
+}
+
+.user-photo {
+  display: none;
+}
+
+.user {
+  position: relative;
+  right: 25px;
+  margin-bottom: 15px;
+}
+
+.content-body {
+  flex-wrap: nowrap;
+}
+  
+.side-menu, .side-bar, .menu-item,
+.nome-evento, .menu-item
+ {
+  width: 100px;
+}
+
+.nome-evento p {
+  margin-top: 0px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+a.link::after{
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #e7e7e7;
+  display: flex;
+  position: relative;
+  margin-top: 7px;
+}
+
+.content-body{
+ width: 100%;
+}
+
+.contentTitleWrapper{
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrapper{
+  margin-top: 20px;
+  flex-wrap: nowrap;
+}
+
+.buttonWrapper {
+  justify-content: center;
+}
+
+.titleWrapper p{
+  text-align: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.interessedetails{
+  position: relative;
+  margin-top: 15px;
+  width: 80%;
+  right: 40px;
+}
+
+.detalhesHeader{
+  width: 100.03%;
+}
+
+.scrollbar{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion{
+  width: 80%;
+}
+
+.discussion{
+  width: 80%;
+}
+
+.imageFooter{
+  width: 80%;
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+  /* CSS */
+  
+}
+
 }

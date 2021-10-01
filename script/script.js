@@ -1,9 +1,8 @@
 let click = document.querySelector('.click');
 let list = document.querySelector('.list');
 click.addEventListener("click", ()=>{
-    list.classList.toggle('newlist')
+    list.classList.toggle('newlist').style.display = "absolute"
 });
-
 // Accordion
 
 let acc = document.getElementsByClassName("accordion");
