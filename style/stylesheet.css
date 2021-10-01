@@ -358,6 +358,72 @@ a.link::after {
   border-radius: 3px;
 }
 
+.textlayer {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 1;
+  width: 743px;
+}
+
+.textlayer h1{
+  position: relative;
+  align-self: center;
+  top: 200px;
+  right: 30px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 25px;
+  
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+}
+
+.textlayer h2{
+  position: relative;
+  align-self: center;
+  right: 20px;
+  top: 250px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+} 
+
+.textlayer h3{
+  position: relative;
+  margin-left: 32px;
+  margin-top: 35px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 25px;
+
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.textlayer img {
+  position: relative;
+  width: 85px;
+  border-radius: 50%;
+  top: 140px;
+  left: 45px;
+}
+
 .camada {
   opacity: 0.5;
   z-index: 2;
