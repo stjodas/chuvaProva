@@ -27,3 +27,19 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Topic
+function hide(){
+  var control = document.getElementById('control').value;
+  if(control == 0){
+      document.getElementById("id1").style = "display: none;";
+      document.getElementById("id2").style = "display: block;";
+      document.getElementById("control").value = "1";
+  } else{
+      document.getElementById("id1").style = "display: block;";
+      document.getElementById("id2").style = "display: none;";
+      document.getElementById("control").value = "0";
+  }
+}
+
+//let new = document.getElementsByClassName("")

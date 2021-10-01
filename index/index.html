@@ -122,6 +122,7 @@
 
                 <div class="accordion">
                     <p>Resumo</p>
+                    <div id="loremPanel">
                     <div class="panel">
                         <p id="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis
                             felis ut, commodo turpis.
@@ -135,41 +136,49 @@
                             Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
                             Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <b>ver mais</b>
                     </div>
+                    </div>
                 </div>
-
+                
                 <div class="discussion">
                     <div class="discussion-title">
                         <p>Discussões</p>
                     </div>
-                <div class="discussion-content">
-                    <p class="discunsionfrase">Compartilhe suas ideias ou dúvidas com os autores!</p>
-                    <div class="imgrow">
-                        <img src="/images/icone1.png">
-                        <img src="/images/icone2.png">
-                        <img src="/images/icone3.png">
+        <!-- limiter 1-->
+                    <div id="id1">
+                        <div class="discussion-content">
+                            <p class="discunsionfrase">Compartilhe suas ideias ou dúvidas com os autores!</p>
+                            <div class="imgrow">
+                            <img src="/images/icone1.png">
+                            <img src="/images/icone2.png">
+                            <img src="/images/icone3.png">
+                            <p class="discunsionfrase2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? 
+                                Deixe seus questionamentos ou sugestões para o autor!</p>
+                        </div>
+                        <div class="plusButton">
+                            <button type="button" onclick="hide();"><img  src="/images/icon - criar.png"> criar tópico </button>
+                            <hr class="divisoria">
+                        </div>
+                        </div>
                     </div>
-                    <p class="discunsionfrase2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? 
-                        Deixe seus questionamentos ou sugestões para o autor!</p>
-                    <div class="plusButton">
-                        <button><img  src="/images/icon - criar.png"> criar tópico </button>
-                        <hr class="divisoria">
-                    </div>
+                    <!-- Limiter 2-->
+                    <input type="text" id="control" hidden value="0">
+                    <div id="id2" style="display: none;">
+                        <div class="newTopic">
+                            <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                            <h3>Assunto</h3>
+                            <input class="subject" type="text" name="input" value="" placeholder="Defina um tópico sucinto para notificar os autores...">
+                            <h3>Conteúdo</h3>
+                            <textarea id="story" name="story" rows="5" cols="33"></textarea>
+                        </div>
 
-                    <div class="newTopic">
-                        <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-                        <h3>Assunto</h3>
-                        <input class="subject" type="text" name="input" value="" placeholder="Defina um tópico sucinto para notificar os autores...">
-                        <h3>Conteúdo</h3>
-                        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+                        <div class="topicSucess">
+                            <h3>Seu tópico foi enviado com sucesso! :D</h3>
+                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                            <h4>Descubra outros trabalhos!</h4>
+                            <button class="creatNewTopic" onclick="hide();">criar novo tópico</button>
+                        </div>
                     </div>
-
-                    <div class="topicSucess">
-                        <h3>Seu tópico foi enviado com sucesso! :D</h3>
-                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                        <h4>Descubra outros trabalhos!</h4>
-                        <button class="creatNewTopic">criar novo tópico</button>
-                    </div>
-
+                    <!---->
                     <div class="showQuiz">
                         <h3>Assunto da pergunta aparece aqui</h3>
                         <h4>Carlos Henrique Santos</h4>
