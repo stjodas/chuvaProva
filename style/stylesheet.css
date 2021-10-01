@@ -1190,13 +1190,144 @@ a.link::after{
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-
-@media (min-width: 481px) and (max-width: 767px) {
-  body {
-    background-color: red;
-  }
-  /* CSS */
-  
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .mainContent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-content{
+    width: 835px;
+  }
+  .content-body {
+    width: 100px;
+  }
+  
+  .headerText p{
+    margin-top: 7px;
+    font-size: 13px;;
+  }
+  
+  .headerText h3{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .drop {
+    margin-left: 5px;
+  }
+  
+  .dropdown button{
+    width: 60px;
+  }
+  
+  .world{
+    display: none;
+  }
+  
+  .user-photo {
+    display: none;
+  }
+  
+  .user {
+    position: relative;
+    right: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .content-body {
+    flex-wrap: nowrap;
+  }
+    
+  .side-menu, .side-bar, .menu-item,
+  .nome-evento, .menu-item
+   {
+    width: 100px;
+  }
+  
+  .nome-evento p {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  a.link::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #e7e7e7;
+    display: flex;
+    position: relative;
+    margin-top: 7px;
+  }
+  
+  .content-body{
+   width: 100%;
+  }
+  
+  .contentTitleWrapper{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titleWrapper{
+    margin-top: 20px;
+    flex-wrap: nowrap;
+  }
+  
+  .buttonWrapper {
+    justify-content: center;
+  }
+  
+  .titleWrapper p{
+    text-align: center;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .interessedetails{
+    margin-top: 20px;
+    position: relative;
+    align-self: center;
+    width: 450px;
+  }
+
+  .newTopic input {
+    margin: 4px;
+    padding: 1px;
+    
+  }
+  
+  .detalhesHeader{
+    width: 100.03%;
+  }
+  
+  .scrollbar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .accordion{
+    width: 780px;
+    position: relative;
+  }
+  
+  .imageFooter{
+    width: 780px;
+  }
+ 
+  
 }
