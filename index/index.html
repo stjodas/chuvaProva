@@ -170,12 +170,11 @@
                         <div class="plusButton">
                             <button type="button" onclick="hideTopic();"><img  src="/images/icon - criar.png"> criar tópico </button>
                         </div>
-
-                    </div>
+                </div>
 
                     </div>
                     
-                    <div id="creatTopic">
+                   <div id="creatTopic">
                     <div class="newTopic">
 
                             <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
@@ -183,7 +182,15 @@
                             <input class="subject" type="text" name="input" value="" placeholder="Defina um tópico sucinto para notificar os autores...">
                             <h3>Conteúdo</h3>
                             <textarea id="story" name="story" rows="5" cols="33"></textarea>
-                            <button type="button" onclick="newTopic();"><img  src="/images/icon - criar.png"> criar tópico </button>
+                            
+                            <div class="letters">
+                                <img src="/images/Bold.png">
+                                <img src="/images/Italic.png">
+                            </div>
+
+                            <div class="sendButton">
+                                <button type="button" onclick="newTopic();"> enviar </button>
+                            </div>
 
                     </div>
                 </div>
@@ -194,25 +201,24 @@
 
                             <h3>Seu tópico foi enviado com sucesso! :D</h3>
                             <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                            <h4>Descubra outros trabalhos!</h4>
+                            <p class="nameQuiz">Descubra outros trabalhos!</p class="nameQuiz">
                             <button class="creatNewTopic" onclick="showNewTopic();"><img src="/images/icon - criar.png"> novo tópico</button>
                         
                     </div>
 
                 </div>
 
-    
-                    <div class="showQuiz">
+                    <div class="showQuiz space">
 
-                        <h3>Assunto da pergunta aparece aqui</h3>
-                        <h4>Carlos Henrique Santos</h4>
+                        <h2>Assunto da pergunta aparece aqui</h2>
+                        <h3 class="nameQuiz">Carlos Henrique Santos</h3>
                         <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
                             da dimensão e impacto de processo formativo situado impacto de processo formativo
                             processo...</p>
 
                         <div class="moreOption">
 
-                            <img src="/images/mais informações.png">
+                            <img class="dotdotdot" src="/images/mais informações.png">
                             <button class="likeButton"><img src="/images/coração.png"></button> 
                             <p>1 like</p>
                             <p>1 resposta</p>
@@ -223,31 +229,30 @@
 
                     <div id="replyAuthor">
                         
-                        <div class="showQuiz">
+                        <div class="replyQuiz">
 
-                            <h3>Assunto da pergunta aparece aqui</h3>
-                            <h4>Carlos Henrique Santos</h4>
+                            <h2>Assunto da pergunta aparece aqui</h2>
+                            <h3 class="nameQuiz">Carlos Henrique Santos</h3>
                             <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
                                  situado impacto de processo formativo processo resente relato inscreve-se no campo da 
                                 análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
 
                         <div class="moreOption">
 
-                            <img src="/images/mais informações.png">
+                            <img class="dotdotdot" src="/images/mais informações.png">
                             <button class="likeButton"><img src="/images/coração.png"></button> 
                             <p>4 like</p>
                             <p>4 resposta</p>
 
                         </div>
-                        <p>a</p>
                         
                     </div>
                     <div id ="hide">
 
-                        <div class="reply showQuiz">
+                        <div class="reply replyQuiz">
 
                             <div class="topreplay">
-                                <h4>Adriano da Silva</h4>
+                                <h3 class="nameQuiz">Adriano da Silva</h3>
                                 <p class="autor">Autor <img src="/images/double-check.png"></p>
                             </div>
                             
@@ -257,10 +262,10 @@
 
                         </div>
 
-                        <div class="reply showQuiz">
+                        <div class="reply replyQuiz">
 
                             <div class="topreplay">
-                                <h4>Carlos Henrique Santos</h4>
+                                <h3 class="nameQuiz">Carlos Henrique Santos</h3>
                             </div>
                             
                             <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo 
@@ -271,10 +276,10 @@
                         </div>
 
 
-                        <div class="reply showQuiz">
+                        <div class="reply replyQuiz">
 
                             <div class="topreplay">
-                                <h4>Camila Ferreira Andrade</h4>
+                                <h3 class="nameQuiz">Camila Ferreira Andrade</h3>
                                 <p class="autor">Coautor <img src="/images/double-check.png"></p>
                             </div>
                             
@@ -287,11 +292,11 @@
 
                         </div>
 
-                        <div class="reply showQuiz">
+                        <div class="reply replyQuiz">
 
                             <div class="topreplay">
-                                <h4>Ana Carolina</h4>
-                                <p class="autor">Coautor <img src="/images/double-check.png"></p>
+                                <h3 class="nameQuiz">Ana Carolina</h3>
+                                <h3 class="autor">Coautor <img src="/images/double-check.png"></h3>
                             </div>
                             
                             <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de 
