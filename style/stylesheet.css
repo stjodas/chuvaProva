@@ -518,19 +518,13 @@ a.link::after {
 .discussion{
   max-width: 96%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 
 .discussion-title{
   background-color: #FDF1EB;
-  cursor: pointer;
   padding: 18px;
   max-width: 100%;
   text-align: start; 
-  border: none;
-  outline: none;
-  transition: 0.4s;
 
   margin-top: 20px;
   border: 1px solid #ECECEC;
@@ -546,14 +540,10 @@ a.link::after {
   color: #4E4E4E
 }
 
-#id1 .discunsion-content {
+.discussion-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.discussion-content {
- 
 
   padding: 18px;
   max-width: 100%;
@@ -565,6 +555,7 @@ a.link::after {
 }
 
 .discusion-phrase {
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -576,18 +567,22 @@ a.link::after {
 }
 
 .imgrow {
-  display: flex;
-  width: 400px;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 30px;
-  margin-top: 30px;
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+.discussion-content img:nth-child(even){
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .discunsionfrase2 {
   width: 626px;
   height: 39px;
 
+  align-self: center;
   font-family: Quicksand;
   font-style: normal;
   font-weight: normal;
@@ -595,7 +590,11 @@ a.link::after {
   line-height: 19px;
   text-align: center;
 
-color: #595959;
+  color: #595959;
+}
+
+.plusButton {
+  align-self: center;
 }
 
 .plusButton button{
@@ -648,6 +647,9 @@ color: #595959;
   color: #5C5C5C;
 }
 
+#hideLoren {
+  display: block;
+}
 .showQuiz p{
   font-family: Quicksand;
   font-style: normal;
@@ -690,6 +692,14 @@ color: #595959;
   bottom: 35px;
 }
 
+#creatTopic {
+  display: none;
+}
+
+#end {
+  display: block;
+}
+
 .newTopic {
   display: flex;
   flex-direction: column;
@@ -722,6 +732,11 @@ color: #595959;
   color: #ED7839;
 }
 
+.newTopic button {
+  align-self: flex-end;
+  width: 100px;
+}
+
 .subject{
   height: 39px;
   margin-bottom: 10px;
@@ -749,10 +764,10 @@ color: #595959;
 
 .topicSucess {
   display: flex;
-
   justify-content: center;
   flex-direction: column;
 
+  width: 100%;
 }
 
 .topicSucess h3{
@@ -761,7 +776,7 @@ color: #595959;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
+  align-self: center;
 
   color: #ED7839;
 
@@ -797,18 +812,61 @@ color: #595959;
   margin-bottom: 20px;
 }
 
+.topicSucess button {
+  align-self: center;
+}
+
+#newTopicAgain {
+  display: none;
+}
+
 .creatNewTopic {
   width: 235.15px;
   height: 32px;
-
-  position: relative;
-  align-items: center;
   
 
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
   border: none;
+
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+
+  text-align: center;
+
+  color: #FFFFFF;
 }
 
+.topreplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.topreplay .autor{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ED7839;
+}
+
+#hide {
+  display: none;
+}
+
+#hide .reply:nth-child(odd){
+  background: #F8F8F8;;
+}
+
+#hide .reply:nth-last-child(1){
+  background: #F8F8F8;;
+}
 /* Footer */

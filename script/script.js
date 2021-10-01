@@ -28,18 +28,54 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Topic
-function hide(){
-  var control = document.getElementById('control').value;
-  if(control == 0){
-      document.getElementById("id1").style = "display: none;";
-      document.getElementById("id2").style = "display: block;";
-      document.getElementById("control").value = "1";
+// Topic buttons
+
+function hideTopic(){
+  let control = document.getElementById('creatTopic');
+  let control2 = document.getElementById('end');
+  if(control.style.display === "none"){
+    control.style.display = "flex"
+    control2.style.display = "none";
   } else{
-      document.getElementById("id1").style = "display: block;";
-      document.getElementById("id2").style = "display: none;";
-      document.getElementById("control").value = "0";
+    control.style.display = "none";
   }
 }
 
-//let new = document.getElementsByClassName("")
+let control = document.getElementById('creatTopic');
+  let control3 = document.getElementById('newTopicAgain');
+
+
+function newTopic(){
+  let control = document.getElementById('creatTopic');
+  let control3 = document.getElementById('newTopicAgain');
+    if(control.style.display === "flex"){
+      control3.style.display = "flex"
+      control.style.display = "none";
+    } else{
+      control.style.display = "flex";
+    }
+  }
+
+ function showNewTopic() {
+  let control = document.getElementById('creatTopic');
+  let control3 = document.getElementById('newTopicAgain');
+    if(control.style.display === "none"){
+      control3.style.display = "none"
+      control.style.display = "flex";
+    } else{
+      control.style.display = "none";
+    }
+  }
+
+//Author reply
+var esconder = document.getElementById('replyAuthor');
+esconder.addEventListener("click", function() {
+  var escondido = document.getElementById("hide");
+
+  if(escondido.style.display === "none"){
+    escondido.style.display = "block";
+  } else {
+    escondido.style.display = "none";
+  }
+});
+
