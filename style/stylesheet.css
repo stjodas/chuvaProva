@@ -457,7 +457,7 @@ a.link::after {
   display: flex;
 }
 
-.accordion {
+.resume {
   background-color: #FDF1EB;
   cursor: pointer;
   padding: 18px;
@@ -469,6 +469,7 @@ a.link::after {
 
   margin-top: 20px;
   border: 1px solid #ECECEC;
+  border-radius: 3px 3px 0px 0px;
   box-sizing: border-box;
 
   font-family: Roboto;
@@ -517,6 +518,9 @@ a.link::after {
 
 .discussion{
   max-width: 96%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .discussion-title{
@@ -531,6 +535,7 @@ a.link::after {
 
   margin-top: 20px;
   border: 1px solid #ECECEC;
+  border-radius: 3px 3px 0px 0px;
   box-sizing: border-box;
 
   font-family: Roboto;
@@ -545,11 +550,10 @@ a.link::after {
 .discussion-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
   padding: 18px;
   max-width: 100%;
-  text-align: left;
   border: none;
   outline: none;
 
@@ -557,7 +561,7 @@ a.link::after {
   box-sizing: border-box;
 }
 
-.discunsionfrase {
+.discusion-phrase {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
