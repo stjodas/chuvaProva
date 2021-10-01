@@ -516,7 +516,6 @@ a.link::after {
 }
 
 .discussion{
-  
   max-width: 96%;
 }
 
@@ -525,7 +524,7 @@ a.link::after {
   cursor: pointer;
   padding: 18px;
   max-width: 100%;
-  text-align: left;
+  text-align: start; 
   border: none;
   outline: none;
   transition: 0.4s;
@@ -549,7 +548,7 @@ a.link::after {
   align-items: center;
 
   padding: 18px;
-  max-width: 96%;
+  max-width: 100%;
   text-align: left;
   border: none;
   outline: none;
@@ -677,4 +676,132 @@ color: #595959;
   left: 7px;
   top: 3px;
 }
+
+.divisoria {
+  position: relative;
+  border: 1px solid red;
+  bottom: 35px;
+}
+
+.newTopic {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+}
+
+.newTopic p{
+  position: relative;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+
+  text-align: center;
+
+  color: #5C5C5C;
+}
+
+.newTopic h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ED7839;
+}
+
+.subject{
+  height: 39px;
+  margin-bottom: 10px;
+}
+
+.subject[type="text"] {
+  padding-left: 23.3px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #4D4D4D;
+}
+
+.content-input {
+  height: 113px;
+}
+
+.content-input[type="text"] {
+  display: flex;
+  text-align: top;
+}
+
+.topicSucess {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #333333;
+}
+
+.topicSucess h3{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ED7839;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.topicSucess p{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: center;
+
+  color: #595959;;
+}
+
+.topicSucess h4{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 137.5%;
+
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #F48F44;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.creatNewTopic {
+  width: 235.15px;
+  height: 32px;
+
+  position: relative;
+  display: flex;
+
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  border: none;
+}
+
 /* Footer */
