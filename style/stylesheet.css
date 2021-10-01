@@ -163,7 +163,6 @@ body {
 .side-menu {
   position: relative;
   max-width: 220px;
-  height: 100vh;
   left: 0px;
 
   display: flex;
@@ -547,10 +546,14 @@ a.link::after {
   color: #4E4E4E
 }
 
-.discussion-content {
+#id1 .discunsion-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.discussion-content {
+ 
 
   padding: 18px;
   max-width: 100%;
@@ -799,6 +802,7 @@ color: #595959;
   height: 32px;
 
   position: relative;
+  align-items: center;
   
 
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
