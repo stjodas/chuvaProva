@@ -28,6 +28,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
 // Topic buttons
 
 function hideTopic() {
